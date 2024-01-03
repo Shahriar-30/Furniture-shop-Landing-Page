@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.LR_padd {
+    padding: 1rem 10.0rem;
+}
+
+.boxAll {
+    margin: 8rem 0;
+}
+
+/* ==================== */
+/* ====== nav_bar ===== */
+.nav_bar {
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.menu_bar li {
+    text-align: center;
+    transition: all .6s;
+    border: 3px solid transparent;
+    border-radius: .1rem;
+}
+
+.menu_bar li:hover {
+    border-bottom: 3px solid var(--black);
+}
+
+.user_box li {
+    cursor: pointer;
+}
+
+.user_box li i {
+    font-size: 25px;
+}
+
+.user_box {
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar-brand img {
+    padding: 1.5rem 0;
+    max-width: 15.0rem;
+}
+
+.nav_all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_bar {
+    display: flex;
+    gap: 5rem;
+}
+
+.menu_bar li a {
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: var(--gupter);
+    color: var(--black);
+}
+
+.user_box .down_list {
+    position: relative;
+}
+.area_brop li{
+    padding: auto 1rem;
+    background-color: #eee;
+}
+.user_box .down_list::after {
+    content: "1";
+    height: 20px;
+    width: 20px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    /* background-color: var(--red); */
+    position: absolute;
+    top: -12px;
+    right: -11px;
+    border-radius: 50%;
+}
+
+/* ====== nav_bar ===== */
+/* === banner ==== */
+.banner_text {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.banner_text h1 {
+    font-size: 7.5rem;
+    font-weight: 400;
+    line-height: 7.6rem;
+    letter-spacing: .2rem;
+    color: var(--text);
+    font-family: var(--habibi);
+    width: 72rem;
+    padding-top: 2rem;
+}
+
+.banner_text p {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    line-height: 2.4rem;
+}
+
+.banner_btn {
+    display: flex;
+    gap: 3rem;
+}
+
+.banner_btn a {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: var(--white);
+    font-family: var(--gupter);
+    letter-spacing: .2rem;
+    background-color: var(--brown);
+    padding: 2.7rem 3.7rem;
+    border: 2px solid transparent;
+    border-radius: .5rem;
+    transition: all 1s;
+}
+
+.banner_btn a:hover {
+    border: 2px solid var(--brown);
+    background-color: transparent;
+    color: var(--brown);
+}
+
+/* === banner ==== */
+/* === clint ==== */
+
+
+.clint_text {
+    font-family: var(--gupter);
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.clint_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem !important;
+}
+
+/* === clint ==== */
+/* === collection ==== */
+.collection_sec {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 8rem 1rem;
+}
+
+.collection_two {
+    background-color: var(--brown);
+    padding: 8rem 1rem 8rem 5rem;
+}
+
+.coll_text h2 {
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--gupter);
+    letter-spacing: .2rem;
+    color: var(--black);
+}
+
+.coll_text p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--brown);
+    font-family: var(--gupter);
+    letter-spacing: .2rem;
+}
+
+.coll_two_txt p {
+    color: var(--gray);
+}
+
+.coll_two_txt h2 {
+    color: var(--black)
+}
+
+/* === collection ==== */
+/* === shop ==== */
+/* .shop {
+	margin-top: 13rem !important;
+} */
+.shop_item {
+    background-color: rgba(196, 165, 134, 0.639);
+    height: 35rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transition: all .6s;
+}
+
+.shop_aling {
+    display: flex;
+    flex-direction: column;
+    gap: 25rem;
+}
+
+.shop_item:hover {
+    height: 30rem;
+}
+.down_list{
+    position: relative;
+}
+.box_shop {
+    display: none;
+	position: absolute;
+	left: -52px;
+	height: 20rem;
+	width: 20.5rem;
+	background-color: #eee;
+	top: 32px;
+	overflow: hidden scroll;
+}
+.cart_btn {
+    font-family: var(--gupter);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--black);
+    letter-spacing: .2rem;
+    background-color: #fff;
+    background-color: #D1A070;
+    border-radius: 7rem;
+    padding: 1.2rem 3.2rem;
+    margin-top: -2.8rem;
+    cursor: pointer;
+}
+
+.item_name {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: var(--habibi);
+    color: var(--black);
+    padding-right: 20rem;
+}
+
+.item_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.item_price h4 {
+    font-family: var(--gupter);
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.item_price h5 {
+    font-family: var(--gupter);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray);
+}
+
+.shop_nav {
+    width: 100%;
+    display: flex;
+    padding: 10rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop_nav_01 h2 {
+    font-family: var(--gupter);
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: .2rem;
+    font-size: 2.4rem;
+}
+
+.shop_nav_02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.5rem;
+}
+
+.shop_nav_02 h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: var(--gupter);
+    color: var(--black);
+    cursor: pointer;
+    letter-spacing: .2rem;
+}
+
+.shop_nav_02 p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--brown);
+    cursor: pointer;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .2rem;
+    font-family: var(--gupter);
+}
+
+.shop_nav_02 p i {
+    font-size: 2rem;
+}
+
+/* === shop ==== */
+/* === clint ==== */
+.clint {
+	margin: 20rem 0 20rem 0 ;
+}
+
+.clint_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    gap: 5rem;
+}
+
+.clint_text h1 {
+    font-family: var(--gupter);
+    font-size: 5.5rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.coll_text p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 2.8rem;
+    font-family: var(--habibi);
+}
+
+.clint_rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50rem;
+}
+
+.clint_rating h3 {
+    font-family: var(--gupter);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.clint_rating h3 p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: var(--habibi);
+}
+
+.clint_switch i {
+    font-size: 3rem;
+    padding: 1rem;
+    transition: all .6s;
+}
+
+.clint_switch i:hover {
+    color: var(--brown);
+}
+
+.other_clint {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.other_clint img {
+    cursor: pointer;
+}
+
+/* === clint ==== */
+/* === suggest ==== */
+.suggest {
+    margin: 15rem 0 5rem 0 !important;
+}
+
+.sugg_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sugg_btn {
+    background-color: transparent;
+    letter-spacing: .2rem;
+    font-family: var(--gupter);
+    color: var(--brown);
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 3rem;
+    border: 2px solid var(--brown);
+    outline: none;
+    padding: 15px 17px;
+}
+
+.sugg_para {
+    width: 349px;
+    font-family: var(--gupter);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 39px;
+    color: var(--black);
+    padding: 2rem 0 0 0;
+    letter-spacing: .2rem;
+}
+
+.sugg_form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sugg_form input::placeholder {
+    font-family: var(--gupter);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--black);
+    letter-spacing: .2rem;
+}
+
+.sugg_form input {
+
+    width: 400px;
+    font-family: var(--gupter);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--black);
+    outline: none;
+    border: none;
+    background-color: rgba(217, 217, 217, 0.547);
+    padding: 2rem 0 2rem 1.6rem;
+    border-radius: 13px;
+}
+
+.sugg_form button {
+    padding: 1.3rem;
+    background-color: var(--brown);
+    border-radius: 13px 0 0 13px;
+    outline: none;
+    position: absolute;
+    color: #FFF;
+    font-family: var(--gupter);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    right: 62px;
+    top: 6px;
+    border: none;
+}
+
+.sugg_form i {
+    font-size: 2rem;
+    border-radius: 0 13px 13px 0;
+    padding: 1.8rem;
+    background-color: rgba(196, 165, 134, 0.424);
+    position: absolute;
+    right: 9px;
+}
+
+.sugg_video {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sugg_video p {
+    color: var(--black);
+    font-family: var(--gupter);
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    padding-right: 2rem;
+}
+
+/* === suggest ==== */
+/* === footer_nav ==== */
+
+.footer_box li {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.footer_box li i {
+    font-size: 25px;
+    color: var(--brown);
+}
+
+.footer_box {
+    display: flex;
+    gap: 3rem;
+}
+.hr{
+    margin: 1rem;
+    border: .5px solid var(--gray);
+}
+/* === footer_nav ==== */
+/* === footer ==== */
+.copyright{
+    text-align: center;
+    padding: 1rem 0;
+    font-family: var(--gupter);
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+.copyright span{
+    color: var(--brown);
+}
+/* === footer ==== */
